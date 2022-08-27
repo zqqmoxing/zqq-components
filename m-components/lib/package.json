@@ -1,0 +1,16 @@
+{
+  "name": "zqq-components",
+  "version": "1.0.2",
+  "main": "index.umd.js",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "author": {
+    "name": "zqq"
+  },
+  "keywords": [
+    "element-plus",
+    "ts",
+    "封装组件",
+    "二次封装"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+      "name":"tabList",
+      "main":"index.mjs",
+      "module":"index.umd.js",
+      "style":"style.css"
+    }
