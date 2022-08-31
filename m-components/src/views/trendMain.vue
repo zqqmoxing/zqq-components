@@ -15,6 +15,7 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
+import { Trend } from "zqq-components/trend";
 </script>
 <style lang="scss" scoped>
 .flex {

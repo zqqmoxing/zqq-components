@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts" setup>
-// import ChooseIcon from "../components/chooseIcon/src/index.vue";//全局已经注册，所有这里不用注册了
+import { ChooseIcon } from "zqq-components/chooseIcon";
 import { ref } from "vue";
 let visible = ref<boolean>(false);
 

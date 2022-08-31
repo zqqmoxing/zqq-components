@@ -5,3 +5,4 @@ export default {
     app.component("NotificationMenu", NotificationMenu);
   }
 };
+export { NotificationMenu };

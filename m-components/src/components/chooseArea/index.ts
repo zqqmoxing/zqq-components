@@ -6,3 +6,4 @@ export default {
     app.component("ChooseArea", ChooseArea);
   }
 };
+export { ChooseArea };

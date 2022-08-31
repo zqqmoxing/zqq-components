@@ -22,6 +22,8 @@
 </template>
 
 <script lang="ts" setup>
+import { NotificationMenu } from "zqq-components/notificationMenu";
+import { TabList } from "zqq-components/tabList";
 import { ref } from "vue";
 import { listData, actions } from "../assets/data";
 import { ListItem, ActionOptions } from "../components/tabList/src/type";

@@ -6527,5 +6527,6 @@ const TL = (e, t) => {
   }
 };
 export {
+  kL as ChooseIcon,
   DL as default
 };

@@ -13,7 +13,6 @@ declare module '@vue/runtime-core' {
     ContainerSrcNavHeader: typeof import('./src/components/container/src/navHeader/index.vue')['default']
     ContainerSrcNavSide: typeof import('./src/components/container/src/navSide/index.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
-    ElTag: typeof import('element-plus/es')['ElTag']
     NotificationMenuSrc: typeof import('./src/components/notificationMenu/src/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

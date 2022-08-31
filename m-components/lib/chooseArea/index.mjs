@@ -19661,5 +19661,6 @@ const e1 = /* @__PURE__ */ ce({
   }
 };
 export {
+  e1 as ChooseArea,
   o1 as default
 };

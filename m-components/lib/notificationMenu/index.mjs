@@ -2361,5 +2361,6 @@ const mi = Ke, gi = mi, hi = /* @__PURE__ */ z({
   }
 };
 export {
+  hi as NotificationMenu,
   yi as default
 };

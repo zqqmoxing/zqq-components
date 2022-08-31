@@ -44,7 +44,7 @@
 <script lang="ts" setup>
 import { ref, PropType } from "vue";
 import { List, ListItem, ActionOptions } from "./type";
-import { ElScrollbar, ElIcon, ElTabs, ElTabPane, ElAvatar } from "element-plus";
+import { ElScrollbar, ElIcon, ElTabs, ElTabPane, ElAvatar, ElTag } from "element-plus";
 const props = defineProps({
   list: {
     type: Array as PropType<List[]>

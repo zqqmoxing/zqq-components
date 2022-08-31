@@ -5,3 +5,4 @@ export default {
     app.component("Trend", Trend);
   }
 };
+export { Trend };

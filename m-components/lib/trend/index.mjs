@@ -198,5 +198,6 @@ const $e = (e, n) => {
   }
 };
 export {
+  we as Trend,
   Ee as default
 };

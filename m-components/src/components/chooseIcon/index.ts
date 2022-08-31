@@ -6,3 +6,5 @@ export default {
     app.component("ChooseIcon", ChooseIcon);
   }
 };
+
+export { ChooseIcon };

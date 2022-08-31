@@ -4,9 +4,10 @@ const vueJsx = require("@vitejs/plugin-vue-jsx");
 const path = require("path");
 const fsExtra = require("fs-extra");
 const fs = require("fs");
+const version = "1.0.7"; //版本号，每次升级需要增加
 const option = {
   name: "zqq-components",
-  version: "1.0.1",
+  version,
   keywords: JSON.stringify(["element-plus", "ts", "封装组件", "二次封装"])
 }; //发布用的配置
 //打包的入口文件夹
@@ -100,14 +101,20 @@ const createIndexDTs = name => {
   if (!name) {
     name = ".";
   }
-  const fileStr = `//告诉使用我们组件库的项目
-//我们这个组件是一个Vue插件
-import { App } from "vue";
-declare const _default: {
-  install(app: App): void;
-};
-export default _default;
-  `;
+  let nameUp = "";
+  let fileStr = `//告诉使用我们组件库的项目
+  //我们这个组件是一个Vue插件
+  import { App } from "vue";
+  declare const _default: {
+    install(app: App): void;
+  };
+  export default _default;`;
+  if (name !== ".") {
+    nameUp = name.slice(0, 1).toUpperCase() + name.slice(1);
+    fileStr += `declare const ${nameUp}: {};
+export { ${nameUp} };`;
+  }
+
   //输出
   fsExtra.outputFile(path.resolve(outDir, `${name}/index.d.ts`), fileStr, "utf-8");
 };
@@ -127,7 +134,6 @@ const buildLib = async () => {
 
     return isDir && fs.readdirSync(componentDir).includes("index.ts");
   });
-  console.log(components);
   //循环构建
   for (const name of components) {
     await buildSingle(name);

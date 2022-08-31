@@ -5,3 +5,4 @@ export default {
     app.component("TabList", TabList);
   }
 };
+export { TabList };
